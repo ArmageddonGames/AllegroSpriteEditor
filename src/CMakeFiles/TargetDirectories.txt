@@ -1,0 +1,11 @@
+C:/Users/Owner/Downloads/aseprite-0.8.1/CMakeFiles/ALL_BUILD.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeFiles/aseprite.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/freetype/CMakeFiles/freetype.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/jpeg/CMakeFiles/jpeg.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/libart_lgpl/CMakeFiles/libart_lgpl.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/libpng/CMakeFiles/libpng.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/loadpng/CMakeFiles/loadpng.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/tinyxml/CMakeFiles/tinyxml.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/vaca/CMakeFiles/vaca.dir
+C:/Users/Owner/Downloads/aseprite-0.8.1/third_party/zlib/CMakeFiles/zlib.dir

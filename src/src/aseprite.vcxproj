@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9C072B6-B457-3EE2-A861-18CA7FD2D084}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>aseprite</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">aseprite.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">aseprite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">aseprite.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">aseprite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">aseprite.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">aseprite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">aseprite.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">aseprite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>alleg.lib;..\third_party\freetype\Debug\freetype.lib;..\third_party\jpeg\Debug\jpeg.lib;..\third_party\libart_lgpl\Debug\libart_lgpl.lib;..\third_party\libpng\Debug\libpng.lib;..\third_party\loadpng\Debug\loadpng.lib;..\third_party\tinyxml\Debug\tinyxml.lib;..\third_party\vaca\Debug\vaca.lib;..\third_party\zlib\Debug\zlib.lib;User32.lib;Shell32.lib;ComCtl32.lib;ComDlg32.lib;Gdi32.lib;Msimg32.lib;WinMM.lib;AdvAPI32.lib;Ole32.lib;ShLwApi.lib;Vfw32.lib;WinInet.lib;PsApi.lib;DDraw.lib;DxGuid.lib;DSound.lib;DInput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Owner/Downloads/aseprite-0.8.1/src/Debug/aseprite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Owner/Downloads/aseprite-0.8.1/src/Debug/aseprite.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>alleg.lib;..\third_party\freetype\Release\freetype.lib;..\third_party\jpeg\Release\jpeg.lib;..\third_party\libart_lgpl\Release\libart_lgpl.lib;..\third_party\libpng\Release\libpng.lib;..\third_party\loadpng\Release\loadpng.lib;..\third_party\tinyxml\Release\tinyxml.lib;..\third_party\vaca\Release\vaca.lib;..\third_party\zlib\Release\zlib.lib;User32.lib;Shell32.lib;ComCtl32.lib;ComDlg32.lib;Gdi32.lib;Msimg32.lib;WinMM.lib;AdvAPI32.lib;Ole32.lib;ShLwApi.lib;Vfw32.lib;WinInet.lib;PsApi.lib;DDraw.lib;DxGuid.lib;DSound.lib;DInput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Owner/Downloads/aseprite-0.8.1/src/Release/aseprite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Owner/Downloads/aseprite-0.8.1/src/Release/aseprite.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>alleg.lib;..\third_party\freetype\MinSizeRel\freetype.lib;..\third_party\jpeg\MinSizeRel\jpeg.lib;..\third_party\libart_lgpl\MinSizeRel\libart_lgpl.lib;..\third_party\libpng\MinSizeRel\libpng.lib;..\third_party\loadpng\MinSizeRel\loadpng.lib;..\third_party\tinyxml\MinSizeRel\tinyxml.lib;..\third_party\vaca\MinSizeRel\vaca.lib;..\third_party\zlib\MinSizeRel\zlib.lib;User32.lib;Shell32.lib;ComCtl32.lib;ComDlg32.lib;Gdi32.lib;Msimg32.lib;WinMM.lib;AdvAPI32.lib;Ole32.lib;ShLwApi.lib;Vfw32.lib;WinInet.lib;PsApi.lib;DDraw.lib;DxGuid.lib;DSound.lib;DInput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Owner/Downloads/aseprite-0.8.1/src/MinSizeRel/aseprite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Owner/Downloads/aseprite-0.8.1/src/MinSizeRel/aseprite.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VACA_ALLEGRO;DEBUGMODE;ALLEGRO_STATICLINK;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Downloads\aseprite-0.8.1\src\..;C:\Users\Owner\Downloads\aseprite-0.8.1\src\.;C:\Users\Owner\Downloads\aseprite-0.8.1\src\..\third_party;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\include;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml;C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>alleg.lib;..\third_party\freetype\RelWithDebInfo\freetype.lib;..\third_party\jpeg\RelWithDebInfo\jpeg.lib;..\third_party\libart_lgpl\RelWithDebInfo\libart_lgpl.lib;..\third_party\libpng\RelWithDebInfo\libpng.lib;..\third_party\loadpng\RelWithDebInfo\loadpng.lib;..\third_party\tinyxml\RelWithDebInfo\tinyxml.lib;..\third_party\vaca\RelWithDebInfo\vaca.lib;..\third_party\zlib\RelWithDebInfo\zlib.lib;User32.lib;Shell32.lib;ComCtl32.lib;ComDlg32.lib;Gdi32.lib;Msimg32.lib;WinMM.lib;AdvAPI32.lib;Ole32.lib;ShLwApi.lib;Vfw32.lib;WinInet.lib;PsApi.lib;DDraw.lib;DxGuid.lib;DSound.lib;DInput8.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Owner/Downloads/aseprite-0.8.1/src/RelWithDebInfo/aseprite.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Owner/Downloads/aseprite-0.8.1/src/RelWithDebInfo/aseprite.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Owner/Downloads/aseprite-0.8.1 -BC:/Users/Owner/Downloads/aseprite-0.8.1 --check-stamp-file C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Owner/Downloads/aseprite-0.8.1 -BC:/Users/Owner/Downloads/aseprite-0.8.1 --check-stamp-file C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Owner/Downloads/aseprite-0.8.1 -BC:/Users/Owner/Downloads/aseprite-0.8.1 --check-stamp-file C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Owner/Downloads/aseprite-0.8.1 -BC:/Users/Owner/Downloads/aseprite-0.8.1 --check-stamp-file C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Owner/Downloads/aseprite-0.8.1/src/CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Owner\Downloads\aseprite-0.8.1\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\app.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\ase_exception.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\check_args.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\console.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\context.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\gfxmode.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\launcher.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\main.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\mem_utils.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\recent_files.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\resource_finder.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\ui_context.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\undoable.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_about.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_advanced_mode.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_background_from_layer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_canvas_size.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_cel_properties.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_change_color.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_change_image_type.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_change_pen.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_check_updates.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_clear.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_close_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_configure_screen.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_configure_tools.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_copy.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_copy_cel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_crop.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_cut.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_deselect_mask.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_donate.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_duplicate_layer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_duplicate_sprite.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_exit.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_eyedropper.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_film_editor.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_flatten_layers.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_flip.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_frame_properties.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_goto_frame.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_goto_layer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_grid.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_invert_mask.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_layer_from_background.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_layer_properties.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_load_mask.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_mask_all.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_mask_by_color.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_merge_down_layer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_move_cel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_new_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_new_frame.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_new_layer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_new_layer_set.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_open_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_options.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_palette_editor.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_paste.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_play_animation.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_preview.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_quick_reference.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_redo.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_refresh.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_remove_cel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_remove_frame.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_remove_layer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_reselect_mask.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_rotate_canvas.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_save_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_save_mask.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_screen_shot.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_select_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_sprite_editor.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_sprite_properties.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_sprite_size.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_switch_colors.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\cmd_undo.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\command.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\commands.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\fx\cmd_color_curve.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\fx\cmd_convolution_matrix.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\fx\cmd_despeckle.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\fx\cmd_invert_color.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\fx\cmd_replace_color.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\commands\fx\effectbg.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\cfg.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\color.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\config.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\core.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\drop_files.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\file_system.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\job.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\core\modules.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\dialogs\aniedit.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\dialogs\drawtext.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\dialogs\filesel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\dialogs\maskcol.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\dialogs\playfli.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\dialogs\repo.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\dialogs\vectmap.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\effect\colcurve.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\effect\convmatr.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\effect\effect.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\effect\images_ref.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\effect\invrtcol.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\effect\median.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\effect\replcol.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\ase_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\bmp_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\fli\fli.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\fli_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\format_options.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\gif\format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\gif\lzw.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\gif_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\ico_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\jpeg_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\pcx_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\png_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\file\tga_format.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\intl\intl.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\intl\msgids.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jaccel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jalert.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jbox.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jbutton.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jclipboard.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jcombobox.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jcustom_label.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jdraw.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jentry.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jexception.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jfile.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jfilesel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jfont.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jfontbmp.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jgrid.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jhook.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jimage.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jinete.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jintern.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jlabel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jlink_label.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jlist.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jlistbox.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jmanager.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jmem.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jmenu.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jmessage.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jpanel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jpopup_window.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jquickmenu.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jrect.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jregion.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jsep.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jslider.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jstream.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jstring.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jsystem.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jtextbox.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jtheme.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jthread.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jtooltips.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jview.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jwidget.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\jwindow.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\jinete\themes\jstandard_theme.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\modules\editors.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\modules\gfx.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\modules\gui.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\modules\palettes.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\modules\rootmenu.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\modules\skinneable_theme.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\algo.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\algofill.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\algo_polygon.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\blend.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\cel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\dirty.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\gfxobj.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\image.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\layer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\mask.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\palette.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\path.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\pen.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\quant.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\rgbmap.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\rotate.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\sprite.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\stock.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\raster\undo.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\settings\ui_settings_impl.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\tools\tool.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\tools\toolbox.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\autocrop.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\boundary.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\celmove.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\clipboard.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\col_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\filetoks.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\hash.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\misc.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\msk_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\pic_file.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\quantize.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\recscr.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\render.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\util\thmbnail.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\colbar.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\colbut.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\colsel.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\colview.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\curvedit.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\editor\click.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\editor\cursor.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\editor\editor.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\editor\keys.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\editor\pixels_movement.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\fileview.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\groupbut.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\menuitem.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\paledit.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\preview.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\statebar.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\tabs.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\target.cpp" />
+    <ClCompile Include="C:\Users\Owner\Downloads\aseprite-0.8.1\src\widgets\toolbar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\ZERO_CHECK.vcxproj">
+      <Project>{7112FCFC-0D86-3637-AC15-D71768E104BF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\freetype\freetype.vcxproj">
+      <Project>{4732304D-4CF5-36F3-BF70-D5EAE6E8FCA9}</Project>
+      <Name>freetype</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\jpeg\jpeg.vcxproj">
+      <Project>{2EA331C6-CC89-3069-99F0-CEFA868060AC}</Project>
+      <Name>jpeg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libart_lgpl\libart_lgpl.vcxproj">
+      <Project>{12A105A5-5853-377C-A99D-D73285CBD285}</Project>
+      <Name>libart_lgpl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\libpng\libpng.vcxproj">
+      <Project>{BF6B943E-FF3F-3490-B0ED-6B5118BAAA28}</Project>
+      <Name>libpng</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\loadpng\loadpng.vcxproj">
+      <Project>{EAB4FC69-6C43-3EBF-BD52-DF6FF2867736}</Project>
+      <Name>loadpng</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\tinyxml\tinyxml.vcxproj">
+      <Project>{57B93DFB-3542-3127-A3B1-213EDE157DF0}</Project>
+      <Name>tinyxml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\vaca\vaca.vcxproj">
+      <Project>{2FD2F9A3-D0DF-3C5F-A029-BB62830A7945}</Project>
+      <Name>vaca</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Owner\Downloads\aseprite-0.8.1\third_party\zlib\zlib.vcxproj">
+      <Project>{E8DEF73F-F69C-3847-B7C4-37D3A87BF543}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
